@@ -3,6 +3,7 @@ site_description: "test-react-ssr-1"
 
 nav:
   - Introduction: index.md
+  - README: ../README.md
 
 plugins:
   - techdocs-core
