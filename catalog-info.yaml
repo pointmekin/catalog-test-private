@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test-react-ssr-1"
+  description: "test-react-ssr-1"
+  annotations:
+    github.com/project-slug: pointmekin/test-react-ssr-1
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "group:default/guests"
