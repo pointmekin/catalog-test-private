@@ -26,3 +26,27 @@ See also <https://www.mkdocs.org/user-guide/configuration/>.
 ## Support
 
 That's it. If you need support, reach out in [#docs-like-code](https://discord.com/channels/687207715902193673/714754240933003266) on Discord.
+
+
+```kroki-plantuml
+skinparam ranksep 20
+skinparam dpi 125
+skinparam packageTitleAlignment left
+
+rectangle "Main" {
+  (main.view)
+  (singleton)
+}
+rectangle "Base" {
+  (base.component)
+  (component)
+  (model)
+}
+rectangle "<b>main.ts</b>" as main_ts
+
+(component) ..> (base.component)
+main_ts ==> (main.view)
+(main.view) --> (component)
+(main.view) ...> (singleton)
+(singleton) ---> (model)
+```
